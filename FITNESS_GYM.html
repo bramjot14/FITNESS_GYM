@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gym Name</title>
+    <style>
+     h1 {
+    color: red;
+    font-weight: 1000;
+    font-style: oblique;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495E;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#home {
+    background-color: #ECF0F1;
+}
+
+#images {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.image-gallery img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#membership {
+    background-color: chocolate;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Alive Fitness</h1>
+        <p>
+            <b>Want to see yourself in a fit body?</b>
+            <p> Alive fitness would definitely gonna help you to achieve your dream body by one on one personal training by our experienced fitness trainers.</p>
+            <p>Remember- <b>Fitness is the key to enhance overall personality.</b> </p>
+
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> 
+        <a href="#images">Gallery</a>
+        <a href="#membership">Membership</a>
+     
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Your Gym</h2>
+        <p>Transform your body and mind with our innovative fitness programs.</p>
+
+        <section id="images">
+            <h2>Our Gym Gallery</h2>
+            <div class="image-gallery">
+                <img src="images/gym_pic_1.jpg" alt="Gym Image 1">
+                <img src="images/gym_pic_2.jpeg" alt="Gym Image 2">
+                <img src="images/gym_pic_3.jpg" alt="Gym Image 3">
+                <img src="images/gym_pic_4.jpg" alt="Gym Image 4">
+            </div>
+        </section>
+
+    <section id="membership">
+        <h2>Membership</h2>
+        <form id="membershipForm" onsubmit="return validateForm();">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="membershipType">Membership Type:</label>
+            <select id="membershipType" name="membershipType" required>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+            </select><br>
+           <button type="button" onclick="validateForm();">Join Now</button>
+
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Alive Fitness. All rights reserved.</p>
+    </footer>
+
+    <script src = "main.js">
+        </script>
+</body>
+</html>
